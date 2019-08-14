@@ -1,7 +1,8 @@
-package com.example.wireframeproject
+package com.example.wireframeproject.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.wireframeproject.R
 
 class MainActivity : AppCompatActivity() {
 
