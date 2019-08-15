@@ -13,8 +13,7 @@ class DetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details)
-
-        var intent = Intent(this, ListActivity::class.java)
+        
         var index = intent.getIntExtra(STRING_KEY, 1)
 //        newsArticles[index]
         image_details.setImageDrawable(newsArticles[index].image)
