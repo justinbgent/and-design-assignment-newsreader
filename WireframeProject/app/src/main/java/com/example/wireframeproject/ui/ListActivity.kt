@@ -14,11 +14,13 @@ import kotlinx.android.synthetic.main.activity_list.*
 
 class ListActivity : AppCompatActivity() {
 
+    companion object{
+        var newsArticles = mutableListOf<Data>()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
-
-        var newsArticles = mutableListOf<Data>()
 
         newsArticles.add(Data(ContextCompat.getDrawable(this, R.drawable.abstract_abstract_expressionism_art_2505693)!!, "Flowers Gone Crazy", " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley "))
         newsArticles.add(Data(ContextCompat.getDrawable(this, R.drawable.aerial_photography_aerial_shot_aerial_view_2583847)!!, "Flowers Gone Crazy", " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley "))
