@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.wireframeproject.model.Data
+import com.example.wireframeproject.model.DataHolders.Companion.STRING_KEY
 import com.example.wireframeproject.ui.DetailsActivity
 import kotlinx.android.synthetic.main.news_item.view.*
 
@@ -25,9 +26,9 @@ class NewsListAdapter(private val data: MutableList<Data>) : RecyclerView.Adapte
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.cardView.setOnClickListener {
             var intent = Intent(holder.cardView.context, DetailsActivity::class.java)
-            intent.putExtra("data", position)
-            intent.putExtra("data1", data[position].newsTitle)
-            intent.putExtra("data2", data[position].newsBody)
+            intent.putExtra(STRING_KEY, position)
+//            intent.putExtra("data1", data[position].newsTitle)
+//            intent.putExtra("data2", data[position].newsBody)
             holder.cardView.context.startActivity(intent)
         }
 

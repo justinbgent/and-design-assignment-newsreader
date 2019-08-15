@@ -20,8 +20,7 @@
                 android:layout_margin="4dp"
                 android:paddingStart="4dp"
                 android:fontFamily="sans-serif-black"
-                android:textSize="30sp"
-                android:text="dsafasdgfsag"
+                android:textSize="40sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -40,7 +39,6 @@
                 android:textSize="16sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="241241241245151"
         />
 
     </LinearLayout>
